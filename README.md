@@ -17,36 +17,49 @@
 > **84% of students already use AI tools. Only 18% feel prepared to use them
 > professionally.** This curriculum closes that gap.
 >
+> **84% 的学生已经在使用 AI 工具。只有 18% 觉得自己已准备好在专业场景中使用它们。**
+> 这套课程弥合了这一差距。
+>
 > 435 lessons. 20 phases. ~320 hours. Python, TypeScript, Rust, Julia. Every lesson ships
 > a reusable artifact: a prompt, a skill, an agent, an MCP server. Free, open source, MIT.
 >
+> 435 节课。20 个阶段。约 320 小时。Python、TypeScript、Rust、Julia。每节课都附带
+> 一个可复用的产物：一个提示词、一个技能、一个智能体、一个 MCP 服务器。免费、开源、MIT。
+>
 > You don't just learn AI. You build it. End-to-end. By hand.
+> 你不只是学习 AI。你会亲手构建它。端到端。亲手完成。
 
 ## How this works
+运作方式
 
 Most AI material teaches in scattered pieces. A paper here, a fine-tuning post there, a
 flashy agent demo somewhere else. The pieces rarely line up. You ship a chatbot but can't
 explain its loss curve. You hook a function to an agent but can't say what attention does
 inside the model that's calling it.
+大多数 AI 教材都是零散地讲授。这里一篇论文，那里一篇微调文章，别处再来一个花哨的 agent 演示。这些碎片很少能拼到一起。你能交付一个 chatbot，却解释不清它的 loss curve。你能把一个函数接到 agent 上，却说不清在调用它的模型内部，attention 到底在做什么。
 
 This curriculum is the spine. 20 phases, 435 lessons, four languages: Python, TypeScript,
 Rust, Julia. Linear algebra at one end, autonomous swarms at the other. Every algorithm
 gets built from raw math first. Backprop. Tokenizer. Attention. Agent loop. By the time
 PyTorch shows up, you already know what it's doing under the hood.
+这套课程就是那条主干。20 个阶段，435 节课，四种语言：Python、TypeScript、Rust、Julia。一端是线性代数，另一端是自主群体系统。每个算法都先从原始数学开始构建。Backprop。Tokenizer。Attention。Agent loop。等到 PyTorch 出场时，你已经知道它底层在做什么了。
 
 Each lesson runs the same loop: read the problem, derive the math, write the code, run
 the test, keep the artifact. No five-minute videos, no copy-paste deploys, no hand-holding.
 Free, open source, and built to run on your own laptop.
+每节课都遵循同一个循环：读题目，推导数学，写代码，跑测试，保留产物。没有五分钟视频，没有复制粘贴式部署，没有手把手带你。免费、开源，并且就是为在你自己的笔记本上运行而构建的。
 
 ```
 ░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒
 ```
 
 ## The shape of the curriculum
+课程的结构
 
 Twenty phases stack on top of each other. Math is the floor. Agents and production are the roof.
 Skip ahead if you already know the lower layers, but don't skip and then wonder why something at
 the top is breaking.
+二十个阶段层层叠加。数学是地基。智能体和生产环境是屋顶。如果你已经掌握了底层内容，可以直接跳到后面；但别一边跳过，一边又纳闷为什么上层的东西会坏。
 
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'12px'}}}%%
@@ -79,8 +92,10 @@ flowchart TB
 ```
 
 ## The shape of a lesson
+一节课的结构
 
 Each lesson lives in its own folder, with the same structure across the entire curriculum:
+每节课都位于自己的文件夹中，而且在整套课程里都遵循相同的结构：
 
 ```
 phases/<NN>-<phase-name>/<NN>-<lesson-name>/
@@ -93,6 +108,7 @@ phases/<NN>-<phase-name>/<NN>-<lesson-name>/
 Every lesson follows six beats. The *Build It / Use It* split is the spine — you implement the
 algorithm from scratch first, then run the same thing through the production library. You
 understand what the framework is doing because you wrote the smaller version yourself.
+每节课都遵循六个节拍。*Build It / Use It* 的划分是主干——你先从零实现这个算法，再用生产级库跑同样的东西。你之所以理解框架在做什么，是因为你已经亲手写过一个更小的版本。
 
 ```mermaid
 %%{init: {'theme':'base','themeVariables':{'primaryColor':'#fafaf5','primaryTextColor':'#1a1a1a','primaryBorderColor':'#3553ff','lineColor':'#3553ff','fontFamily':'JetBrains Mono','fontSize':'13px'}}}%%
@@ -105,14 +121,18 @@ flowchart LR
 ```
 
 ## Getting started
+开始上手
 
 Three ways in. Pick one.
+有三种进入方式。选一种。
 
 **Option A — read.** Open any completed lesson on
 [aiengineeringfromscratch.com](https://aiengineeringfromscratch.com) or expand a phase under
 [Contents](#contents). No setup, no cloning.
+**选项 A — 阅读。** 打开 [aiengineeringfromscratch.com](https://aiengineeringfromscratch.com) 上任意一节已完成的课程，或展开 [Contents](#contents) 下的任一阶段。无需配置，无需克隆。
 
 **Option B — clone and run.**
+**选项 B — 克隆并运行。**
 
 ```bash
 git clone https://github.com/rohitg00/ai-engineering-from-scratch.git
@@ -121,6 +141,7 @@ python phases/01-math-foundations/01-linear-algebra-intuition/code/vectors.py
 ```
 
 **Option C — find your level *(recommended)*.** Skip ahead intelligently. Inside Claude, Cursor, Codex, OpenClaw, Hermes, or any agent with SkillKit installed:
+**选项 C — 找到你的水平 *(推荐)*。** 智能地跳到合适位置。在 Claude、Cursor、Codex、OpenClaw、Hermes，或任何已安装 SkillKit 的 agent 中：
 
 ```bash
 /find-your-level
@@ -128,6 +149,7 @@ python phases/01-math-foundations/01-linear-algebra-intuition/code/vectors.py
 
 Ten questions. Maps your knowledge to a starting phase, builds a personalized path with hour
 estimates. After each phase:
+十个问题。把你的知识映射到一个起始阶段，并生成一条带有时长估算的个性化路径。每个阶段结束后：
 
 ```bash
 /check-understanding 3        # quiz yourself on phase 3
@@ -137,11 +159,13 @@ ls phases/03-deep-learning-core/05-loss-functions/outputs/
 ```
 
 ### Prerequisites
+前置条件
 
-- You can write code (any language; Python helps).
-- You want to understand how AI **actually works**, not just call APIs.
+- You can write code (any language; Python helps). --- 你会写代码（任何语言都可以；Python 会有帮助）。
+- You want to understand how AI **actually works**, not just call APIs. --- 你想理解 AI **究竟是如何运作的**，而不只是调用 API。
 
 ### Built-in agent skills (SkillKit / Claude, Cursor, Codex, OpenClaw, Hermes)
+内置 agent 技能（SkillKit / Claude、Cursor、Codex、OpenClaw、Hermes）
 
 | Skill | What it does |
 |---|---|
@@ -153,9 +177,11 @@ ls phases/03-deep-learning-core/05-loss-functions/outputs/
 ```
 
 ## Every lesson ships something
+每一课都会交付成果
 
 Other curricula end with *"congratulations, you learned X."* Each lesson here ends with a
 **reusable tool** you can install or paste into your daily workflow.
+其他课程通常以 *"恭喜，你学会了 X。"* 收尾。这里的每一课都以一个你可以安装或粘贴到日常工作流中的**可复用工具**收尾。
 
 <table>
 <tr>
@@ -173,18 +199,24 @@ Other curricula end with *"congratulations, you learned X."* Each lesson here en
 </table>
 
 > Install the lot with [SkillKit](https://github.com/rohitg00/skillkit). Real tools, not
+> 用 [SkillKit](https://github.com/rohitg00/skillkit) 全部安装。是真正的工具，不是
 > homework. By the end of the curriculum, you have a portfolio of 435 artifacts you actually
+> 作业。到整个课程结束时，你将拥有一个由 435 个成果物组成的作品集，而这些成果你确实
 > understand because you built them.
+> 理解，因为它们是你亲手构建的。
 
 ### FIG_002 · A worked sample
+FIG_002 · 一个完整示例
 
 Phase 14, lesson 1: the agent loop. ~120 lines of pure Python, no dependencies.
+第 14 阶段，第 1 课：agent 循环。约 120 行纯 Python，无依赖。
 
 <table>
 <tr>
 <td valign="top" width="50%">
 
 **`code/agent_loop.py`** &nbsp; <sub><i>build it</i></sub>
+**`code/agent_loop.py`** &nbsp; <sub><i>构建它</i></sub>
 
 ```python
 def run(query, tools):
@@ -204,6 +236,7 @@ def run(query, tools):
 <td valign="top" width="50%">
 
 **`outputs/skill-agent-loop.md`** &nbsp; <sub><i>ship it</i></sub>
+**`outputs/skill-agent-loop.md`** &nbsp; <sub><i>交付它</i></sub>
 
 ```markdown
 ---
@@ -216,6 +249,7 @@ lesson: 01
 Implement a minimal agent loop that...
 ```
 
+**`outputs/prompt-debug-agent.md`**
 **`outputs/prompt-debug-agent.md`**
 
 ```markdown
@@ -235,12 +269,16 @@ the agent went wrong and explain why...
 <a id="contents"></a>
 
 ## Contents
+目录
 
 Twenty phases. Click any phase to expand its lesson list.
+二十个阶段。点击任一阶段即可展开其课程列表。
 
 <a id="phase-0"></a>
 ### Phase 0: Setup & Tooling `12 lessons`
+第 0 阶段：环境搭建与工具链 `12 lessons`
 > Get your environment ready for everything that follows.
+> 为接下来的一切准备好你的环境。
 
 | # | Lesson | Type | Lang |
 |:---:|--------|:----:|------|
@@ -676,6 +714,7 @@ Twenty phases. Click any phase to expand its lesson list.
 | 42 | [Capstone: Ship a Reusable Agent Workbench Pack](phases/14-agent-engineering/42-agent-workbench-capstone/) | Build | Python |
 
 Each Phase 14 workbench lesson (31-42) ships a `mission.md` briefing the agent before it opens the full lesson docs.
+第 14 阶段的每节工作台课程（31-42）都会附带一个 `mission.md`，在 agent 打开完整课程文档前为其提供简报。
 
 </details>
 
@@ -851,8 +890,10 @@ Each Phase 14 workbench lesson (31-42) ships a `mission.md` briefing the agent b
 ```
 
 ## The toolkit
+工具包
 
 Every lesson produces a reusable artifact. By the end you have:
+每一课都会产出一个可复用的成果物。到最后你将拥有：
 
 ```
 outputs/
@@ -862,13 +903,16 @@ outputs/
 
 Install them with [SkillKit](https://github.com/rohitg00/skillkit). Plug them into Claude, Cursor,
 Codex, OpenClaw, Hermes, or any MCP-compatible agent. Real tools, not homework.
+用 [SkillKit](https://github.com/rohitg00/skillkit) 安装它们。把它们接入 Claude、Cursor、Codex、OpenClaw、Hermes 或任何兼容 MCP 的 agent。是真正的工具，不是作业。
 
 ### Install every course skill into your agent
+将课程中的所有 skill 安装到你的 agent 中
 
 The repo ships 373 skills and 99 prompts under `phases/**/outputs/`.
 `scripts/install_skills.py` walks every artifact, parses YAML frontmatter, and
 copies the matching files into a target directory in the layout your agent
 expects.
+该 repo 在 `phases/**/outputs/` 下提供了 373 个 skill 和 99 个 prompt。`scripts/install_skills.py` 会遍历每个成果物，解析 YAML frontmatter，并按你的 agent 所期望的目录布局将匹配的文件复制到目标目录。
 
 ```bash
 python3 scripts/install_skills.py ~/.claude/skills                 # every skill, SkillKit layout
@@ -885,6 +929,7 @@ with code 1 after listing every colliding path. Use `--dry-run` to preview
 collisions or `--force` to overwrite. Every non-dry-run run writes a
 `manifest.json` in the target with the full inventory grouped by type and
 phase. Pick the layout your agent reads:
+默认情况下，该脚本会拒绝覆盖已存在的目标内容，并在列出每一条冲突路径后以退出码 1 结束。使用 `--dry-run` 预览冲突，或使用 `--force` 进行覆盖。每次非 dry-run 的运行都会在目标位置写入一个 `manifest.json`，其中按类型和阶段分组列出完整清单。选择你的 agent 读取的布局：
 
 | `--layout`  | Path written |
 |---|---|
@@ -893,9 +938,11 @@ phase. Pick the layout your agent reads:
 | `flat`      | `<target>/<name>.md` |
 
 ### Drop the agent workbench into your own repo
+把 agent workbench 放进你自己的 repo
 
 The Phase 14 capstone ships a reusable Agent Workbench pack (AGENTS.md, schemas,
 init / verify / handoff scripts). Scaffold it into any repo with:
+第 14 阶段的压轴项目附带了一个可复用的 Agent Workbench 包（AGENTS.md、schemas、init / verify / handoff scripts）。用下面的方式把它脚手架到任意 repo 中：
 
 ```bash
 python3 scripts/scaffold_workbench.py path/to/your-repo            # full pack + seeds
@@ -909,11 +956,14 @@ and a fresh `agent_state.json` at `schema_version: 1`. From there: edit the
 task, edit `AGENTS.md`, run `scripts/init_agent.py`, hand the contract to
 your agent. The pack source lives at
 `phases/14-agent-engineering/42-agent-workbench-capstone/outputs/agent-workbench-pack/`.
+你会得到七个已接线完成的 workbench 界面、一个初始 `task_board.json`，以及一个 `schema_version: 1` 的全新 `agent_state.json`。接下来：编辑任务，编辑 `AGENTS.md`，运行 `scripts/init_agent.py`，把这份约定交给你的 agent。该 pack 的源文件位于 `phases/14-agent-engineering/42-agent-workbench-capstone/outputs/agent-workbench-pack/`。
 
 ### Browse the entire course as JSON
+以 JSON 格式浏览整个课程
 
 `scripts/build_catalog.py` walks every phase, every lesson, every artifact on
 disk and writes `catalog.json` at the repo root. One file, every course truth.
+`scripts/build_catalog.py` 会遍历每个阶段、每节课以及磁盘上的每个工件，并将 `catalog.json` 写入仓库根目录。一个文件，包含课程的全部真实状态。
 
 ```bash
 python3 scripts/build_catalog.py               # writes <repo>/catalog.json
@@ -925,19 +975,23 @@ The catalog is filesystem-derived, not README-derived, so counts always match
 what is actually on disk. Use it for site builds, downstream tooling, or to
 verify the README counts have not drifted. Schema is documented at the top of
 the script.
+该目录来自文件系统，而不是 README，因此计数始终与磁盘上的实际内容一致。可将其用于站点构建、下游工具，或验证 README 中的计数是否发生漂移。Schema 记录在脚本顶部。
 
 A GitHub Action (`.github/workflows/curriculum.yml`) rebuilds `catalog.json`
 on every PR and fails the build if the committed file is stale. After editing
 any lesson, run `python3 scripts/build_catalog.py` and commit the result, or
 CI will reject the PR. The same workflow runs `audit_lessons.py` in
 warn-only mode (so existing drift does not block contributors).
+一个 GitHub Action (`.github/workflows/curriculum.yml`) 会在每个 PR 上重新生成 `catalog.json`，如果已提交的文件已过期，则构建失败。编辑任何课程后，请运行 `python3 scripts/build_catalog.py` 并提交结果，否则 CI 会拒绝该 PR。同一个工作流还会以仅警告模式运行 `audit_lessons.py`（因此现有漂移不会阻塞贡献者）。
 
 ### Smoke-check every lesson's Python code
+对每节课的 Python 代码做冒烟检查
 
 `scripts/lesson_run.py` byte-compiles every `.py` file under each lesson's
 `code/` directory. Default mode is syntax-check only — no execution, no API
 keys, no heavy ML deps required. Catches the regressions contributors
 introduce most often (bad indentation, broken f-strings, stray edits).
+`scripts/lesson_run.py` 会对每节课 `code/` 目录下的每个 `.py` 文件进行字节码编译。默认模式仅做语法检查——不执行代码、不需要 API keys，也不需要重量级 ML 依赖。它能捕获贡献者最常引入的回归问题（错误的缩进、损坏的 f-string、意外的编辑）。
 
 ```bash
 python3 scripts/lesson_run.py                  # syntax-check the whole curriculum
@@ -951,13 +1005,16 @@ python3 scripts/lesson_run.py --execute        # actually run, 10s timeout per l
 10-second timeout. Lessons whose entry file starts with a `# requires: pkg1,
 pkg2` comment listing non-stdlib deps are skipped with reason `needs <deps>`.
 The script is opt-in and not wired into CI.
+`--execute` 会运行每节课的 `code/main.py`（或第一个 `.py` 文件），超时时间为 10 秒。如果某课的入口文件以 `# requires: pkg1, pkg2` 注释开头，并列出了非标准库依赖，则会以 `needs <deps>` 为原因跳过。该脚本为可选功能，未接入 CI。
 
 Stdlib only, Python 3.10+. Set `LINK_CHECK_SKIP=domain1,domain2` to override
 the default skip-list (`twitter.com`, `x.com`, `linkedin.com`,
 `instagram.com`, `medium.com` — domains that aggressively block automated
 HEAD/GET).
+仅依赖标准库，支持 Python 3.10+。设置 `LINK_CHECK_SKIP=domain1,domain2` 可覆盖默认跳过列表（`twitter.com`、`x.com`、`linkedin.com`、`instagram.com`、`medium.com`——这些域名会强力拦截自动化 HEAD/GET 请求）。
 
 ## Where to start
+从哪里开始
 
 | Background | Start at | Estimated time |
 |---|---|---|
@@ -972,6 +1029,7 @@ HEAD/GET).
 ```
 
 ## Why this matters now
+为什么这件事在当下很重要
 
 <table>
 <tr>
@@ -982,25 +1040,31 @@ HEAD/GET).
 <td valign="top">
 
 > *"The hottest new programming language is English."*<br/>
+> *“最火的新编程语言是英语。”*<br/>
 > — **Andrej Karpathy** ([tweet](https://x.com/karpathy/status/1617979122625712128))
+> — **Andrej Karpathy**（[tweet](https://x.com/karpathy/status/1617979122625712128)）
 
 > *"Software engineering is being remade in front of our eyes."*<br/>
+> *“软件工程正在我们眼前被重塑。”*<br/>
 > — **Boris Cherny**, creator of Claude Code
+> — **Boris Cherny**，Claude Code 的创造者
 
 > *"Models will keep getting better. The skill that compounds is **knowing what to build**."*<br/>
+> *“模型会持续变得更强。真正能复利的技能是**知道该构建什么**。”*<br/>
 > — Industry consensus, 2026
+> — 行业共识，2026
 
 </td>
 <td valign="top">
 
-- *Attention Is All You Need* — Vaswani et al., 2017 → [Phase 7](#phase-7)
-- *Language Models are Few-Shot Learners* (GPT-3) → [Phase 10](#phase-10)
-- *Denoising Diffusion Probabilistic Models* → [Phase 8](#phase-8)
-- *InstructGPT / RLHF* → [Phase 10](#phase-10)
-- *Direct Preference Optimization* → [Phase 10](#phase-10)
-- *Chain-of-Thought Prompting* → [Phase 11](#phase-11)
-- *ReAct: Reasoning + Acting in LLMs* → [Phase 14](#phase-14)
-- *Model Context Protocol* — Anthropic → [Phase 13](#phase-13)
+- *Attention Is All You Need* — Vaswani et al., 2017 → [Phase 7](#phase-7) --- *Attention Is All You Need* — Vaswani et al., 2017 → [Phase 7](#phase-7)
+- *Language Models are Few-Shot Learners* (GPT-3) → [Phase 10](#phase-10) --- *Language Models are Few-Shot Learners* (GPT-3) → [Phase 10](#phase-10)
+- *Denoising Diffusion Probabilistic Models* → [Phase 8](#phase-8) --- *Denoising Diffusion Probabilistic Models* → [Phase 8](#phase-8)
+- *InstructGPT / RLHF* → [Phase 10](#phase-10) --- *InstructGPT / RLHF* → [Phase 10](#phase-10)
+- *Direct Preference Optimization* → [Phase 10](#phase-10) --- *Direct Preference Optimization* → [Phase 10](#phase-10)
+- *Chain-of-Thought Prompting* → [Phase 11](#phase-11) --- *Chain-of-Thought Prompting* → [Phase 11](#phase-11)
+- *ReAct: Reasoning + Acting in LLMs* → [Phase 14](#phase-14) --- *ReAct: Reasoning + Acting in LLMs* → [Phase 14](#phase-14)
+- *Model Context Protocol* — Anthropic → [Phase 13](#phase-13) --- *Model Context Protocol* — Anthropic → [Phase 13](#phase-13)
 
 </td>
 </tr>
@@ -1011,6 +1075,7 @@ HEAD/GET).
 ```
 
 ## Contributing
+贡献
 
 | Goal | Read |
 |---|---|
@@ -1022,6 +1087,7 @@ HEAD/GET).
 | Code of conduct | [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) |
 
 Before submitting a lesson, run the invariant check:
+在提交课程之前，运行不变量检查：
 
 ```bash
 python3 scripts/audit_lessons.py           # full curriculum
@@ -1033,17 +1099,21 @@ Exit code is non-zero when any rule fails. Rules (L001–L010) validate director
 shape, `docs/en.md` presence + H1, `code/` non-emptiness, `quiz.json` schema
 (rejects the legacy `q/choices/answer` keys that caused issue #102), and
 relative links inside lesson docs.
+当任何规则失败时，退出码都会非零。规则（L001–L010）会校验目录结构、`docs/en.md` 的存在性 + H1、`code/` 非空、`quiz.json` 模式（拒绝导致 issue #102 的旧版 `q/choices/answer` 键），以及课程文档中的相对链接。
 
 ```
 ░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒
 ```
 
 ## Sponsor the work
+赞助这项工作
 
 Free, MIT-licensed, 435 lessons. The curriculum is maintained on sponsorship alone. Cash only.
+免费，采用 MIT 许可证，435 节课程。该课程体系仅靠赞助维持。仅接受现金。
 
 **Reach (verified 2026-05-14):** 55,593 monthly visitors · 90,709 page views · 7.5K stars ·
 Twitter/X is the #1 acquisition channel.
+**覆盖范围（已于 2026-05-14 验证）：** 55,593 月访客 · 90,709 页面浏览量 · 7.5K 星标 · Twitter/X 是排名第 1 的获客渠道。
 
 | Tier | $/mo | What you get |
 |------|------|---|
@@ -1055,16 +1125,19 @@ Twitter/X is the #1 acquisition channel.
 
 Full rate card, hard rules, pricing anchors, and reach data: [SPONSORS.md](SPONSORS.md).
 Sign up via [GitHub Sponsors](https://github.com/sponsors/rohitg00).
+完整的价目表、硬性规则、定价锚点和覆盖数据见：[SPONSORS.md](SPONSORS.md)。通过 [GitHub Sponsors](https://github.com/sponsors/rohitg00) 报名。
 
 ```
 ░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒░░░▒▒▒
 ```
 
 ## From the same author
+同一作者的其他作品
 
 The curriculum teaches the primitives. These repositories ship them in production:
 memory, reasoning, knowledge protocol, agent-skill toolchain, and an agent-workflow
 patterns library.
+该课程体系教授基础原语。这些仓库将它们投入生产：记忆、推理、知识协议、agent-skill 工具链，以及一个 agent-workflow 模式库。
 
 | Repo | Stars | What it is |
 |---|---|---|
@@ -1079,6 +1152,7 @@ patterns library.
 ```
 
 ## Star history
+星标历史
 
 <a href="https://star-history.com/#rohitg00/ai-engineering-from-scratch&Date">
   <picture>
@@ -1088,13 +1162,17 @@ patterns library.
 </a>
 
 If this manual helped you, star the repo. It keeps the project alive.
+如果这份手册帮到了你，请给仓库点个星标。这能让项目持续下去。
 
 ## License
+许可证
 
 MIT. Use it however you want — fork it, teach it, sell it, ship it. Attribution appreciated,
 not required.
+MIT。你可以按任何你想要的方式使用它——fork 它、教授它、出售它、发布它。欢迎署名，但不是必需的。
 
 Maintained by [Rohit Ghumare](https://github.com/rohitg00) and the community.
+由 [Rohit Ghumare](https://github.com/rohitg00) 和社区维护。
 
 <sub>
   <a href="https://x.com/ghumare64">@ghumare64</a> &nbsp;·&nbsp;

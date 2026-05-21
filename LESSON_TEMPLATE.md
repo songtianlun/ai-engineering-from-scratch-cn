@@ -1,8 +1,11 @@
 # Lesson Template
+课程模板
 
 Use this template when creating a new lesson. Copy the folder structure and fill in the content.
+创建新课程时使用此模板。复制文件夹结构并填写内容。
 
 ## Folder Structure
+文件夹结构
 
 ```
 NN-lesson-name/
@@ -21,6 +24,7 @@ NN-lesson-name/
 ```
 
 ## Documentation Format (docs/en.md)
+文档格式 (docs/en.md)
 
 ```markdown
 # [Lesson Title]
@@ -94,17 +98,20 @@ Include it here and save it in the outputs/ folder.]
 ```
 
 ## Code File Guidelines
+代码文件指南
 
-- Code must run without errors
-- No comments — code should be self-explanatory
-- Use the language that fits best for the topic
-- Include a `requirements.txt` or equivalent if there are dependencies
-- Start simple, build up complexity
-- Every function and class should have a clear purpose
+- Code must run without errors --- 代码必须能够无错误运行
+- No comments — code should be self-explanatory --- 不要添加注释——代码应当自解释
+- Use the language that fits best for the topic --- 使用最适合该主题的语言
+- Include a `requirements.txt` or equivalent if there are dependencies --- 如果有依赖项，请包含 `requirements.txt` 或等效文件
+- Start simple, build up complexity --- 从简单开始，逐步增加复杂度
+- Every function and class should have a clear purpose --- 每个函数和类都应有明确的用途
 
 ## Output File Format
+输出文件格式
 
 ### Prompts
+提示词
 
 ```markdown
 ---
@@ -118,6 +125,7 @@ lesson: [lesson number]
 ```
 
 ### Skills
+技能
 
 ```markdown
 ---

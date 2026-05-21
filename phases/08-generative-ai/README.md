@@ -1,8 +1,11 @@
 # Phase 8: Generative AI
+第 8 阶段：生成式 AI
 
 > Create images, video, audio, 3D, and more.
+> 创建图像、视频、音频、3D 等内容。
 
 14 lessons, ~14 hours total. Each lesson ships: a 180-230 line doc, a runnable stdlib Python demo, a diagram, and a named skill for your agent.
+共 14 节课，总计约 14 小时。每节课都包含：一份 180-230 行的文档、一个可运行的 stdlib Python 演示、一个图示，以及一个为你的 agent 命名的技能。
 
 | # | Lesson | Time |
 |---|--------|------|
@@ -22,3 +25,4 @@
 | 14 | [Evaluation — FID, CLIP Score, Human Preference](14-evaluation-fid-clip-score/) | ~45 min |
 
 See [ROADMAP.md](../../ROADMAP.md) for the full cross-phase plan.
+完整的跨阶段计划请参见 [ROADMAP.md](../../ROADMAP.md)。
